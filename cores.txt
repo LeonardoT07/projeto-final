@@ -1,0 +1,3 @@
+azul escuro #293541
+azul claro #57b0eb
+laranja #fc8f3e
