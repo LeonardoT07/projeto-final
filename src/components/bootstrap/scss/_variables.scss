@@ -111,10 +111,10 @@ $gray-lighter:              #eceeef !default;
 $gray-lightest:             #f7f7f9 !default;
 
 // Reassign color vars to semantic color scheme
-$brand-primary:             $blue !default;
+$brand-primary:             #293541 !default;
 $brand-success:             $green !default;
-$brand-info:                $teal !default;
-$brand-warning:             $orange !default;
+$brand-info:                #57b0eb !default;
+$brand-warning:             #fc8f3e !default;
 $brand-danger:              $red !default;
 $brand-inverse:             $gray-dark !default;
 
@@ -181,7 +181,7 @@ $sizes: (
 //
 // Settings for the `<body>` element.
 
-$body-bg:       $white !default;
+$body-bg:       #efefef !default;
 $body-color:    $gray-dark !default;
 $inverse-bg:    $gray-dark !default;
 $inverse-color: $gray-lighter !default;

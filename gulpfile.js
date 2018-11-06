@@ -56,6 +56,7 @@ gulp.task("html", function() {
 gulp.task("js", ['cache:js'], function() {
 	return gulp.src("./src/js/app.js")
 				.pipe(uglify())
+				.on('error', notify.onError({title: "erro js", message: "<%= error.message %>"}))
 				.pipe(gulp.dest("./dist/js"))
 				.pipe(browserSync.stream());
 });
@@ -112,7 +113,7 @@ gulp.task("server", function() {
 	Tasks default
 	- Roda uma sequencia de tasks em ordem planejada
 ------------------------------------------------------------------------------------------------------- */
-gulp.task("default", ["sass", "html", "js", "concat-js", "server"]);
+gulp.task("default", ["sass", "html", "js", "concat-js", "move-fonts", "server"]);
 
 
 
