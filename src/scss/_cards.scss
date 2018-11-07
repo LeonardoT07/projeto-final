@@ -1,0 +1,71 @@
+/* Cards */
+.center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.card {
+	margin-bottom: 2rem;
+	.nav {
+		flex-direction: column;
+	}
+	
+	.card-header,
+	.card-footer {
+		background-color: #fff;
+	}
+
+	&.contractors {
+		.card-block {
+			display: flex;
+			justify-content: center;
+			
+			.fa {
+				font-size: 5rem;
+				color: $brand-warning;
+			}
+		}
+		.card-footer {
+			display: flex;
+			justify-content: space-between;
+
+			.item {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				font-size: 1.3rem;
+
+				.warning {
+					color: $brand-warning;
+				}
+
+				.info {
+					color: $brand-info;
+				}
+			}
+		}
+	}
+}
+
+.badge {
+	width: 14px;
+	height: 14px;
+	border-radius: 0px;
+	
+	&:empty {
+		display: inline-block;
+	}
+
+	&.warning {
+		background-color: $brand-warning;
+	}
+
+	&.info {
+		background-color: $brand-info;
+	}
+
+	&.primary {
+		background-color: $brand-primary;
+	}
+}

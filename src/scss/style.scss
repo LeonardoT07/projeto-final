@@ -2,43 +2,8 @@
 @import "../components/components-font-awesome/scss/font-awesome.scss";
 
 // Sidebar
-@import "./src/scss/sidebar.scss";
-
-/* Header */
-
-.header {
-	width: 100%;
-	height: 70px;
-	padding: 0 1em;
-	background-color: #fff;
-	box-shadow: 0 5px 15px -2px rgba(0,0,0,.4);
-
-	display: flex;
-	justify-content: space-between;
-	
-	.offcanvas,
-	.date-timer,
-	.user {
-		display: flex;
-		align-items: center;
-	}
-
-	.offcanvas .item {
-		font-size: 2rem;
-	}
-
-	.date-timer {
-		flex-direction: row;
-
-		p {
-			font-size: .8rem;
-			margin-right: .5em;
-			margin-bottom: 0;
-
-			.mark {
-				color: $brand-warning;
-			}
-		}
-	}
-
-}
+@import "./src/scss/_sidebar.scss";
+// Header
+@import "./src/scss/_header.scss";
+// Cards
+@import "./src/scss/_cards.scss";
