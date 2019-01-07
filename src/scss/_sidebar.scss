@@ -48,6 +48,18 @@
 			font-size: 1.5em;
 		}
 	}
+
+	@include media-breakpoint-up('lg'){
+		left: 0;
+
+		.nav .nav-link {
+			font-size: 1rem;
+		}
+
+		.nav .fa {
+			font-size: 1.7em;
+		}
+	}
 }
 
 .open-sidebar {
